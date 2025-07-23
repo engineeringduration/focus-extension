@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Timer with Music",
+  "version": "1.0",
+  "description": "A simple focus timer that works even when popup is closed, with a music player.",
+  "permissions": ["alarms", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon48.png"
+    }
+  },
+  "icons": {
+    "48": "icons/icon48.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["music/*.mp3"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
