@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Focus Timer</h1>
+    <button id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+      <span id="theme-icon">🌙</span>
+    </button>
+    <div id="timer-container">
+      <svg id="timer-ring" width="120" height="120">
+        <circle cx="60" cy="60" r="54" stroke="#e6e6e6" stroke-width="8" fill="none"/>
+        <circle id="timer-progress" cx="60" cy="60" r="54" stroke="#007bff" stroke-width="8" fill="none" stroke-linecap="round"/>
+      </svg>
+      <div id="timer">25:00</div>
+    </div>
+    <div class="controls">
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <h2>Focus Music</h2>
+    <div id="music-section">
+      <select id="music-select">
+        <option value="instrumental.mp3">Instrumental</option>
+        <option value="piano.mp3">Piano</option>
+        <option value="rain.mp3">Rain</option>
+        <option value="whitenoise.mp3">White Noise</option>
+      </select>
+      <button id="playMusic">Play Music</button>
+      <ul id="music-track-list"></ul>
+    </div>
+    <audio id="audioPlayer" controls></audio>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
