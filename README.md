@@ -3,7 +3,7 @@
 A productivity browser extension designed to help you stay focused online by minimising distractions.  
 Built with JavaScript, CSS, and HTML.
 
-[![Watch the demo](https://img.youtube.com/vi/aqPjoH63kEU/0.jpg)](https://youtu.be/aqPjoH63kEU)
+[![Watch the demo](https://img.youtube.com/vi/8KLk6-6UYpY/0.jpg)](https://youtu.be/8KLk6-6UYpY?si=Dmtpz-XMQMDLzr0T)
 
 ## Features
 
